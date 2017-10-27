@@ -8,7 +8,7 @@
 time_t maintime;
 struct tm * localstruct;
 char utctime[50];
-char count;  //  Used to schedule temp and humidity updates.
+int32_t count;  //  Used to schedule temp and humidity updates.
 //  JSON message which is sent to web page using mg_printf_websocket_frame().
 char* timeString = "{\"messageType\":\"serverTime\",\"serverTime\":\"%s\"}";
 char* tempString = "{\"messageType\":\"temperature\",\"currentTemp\":\"%2.1f\"}";
@@ -64,7 +64,7 @@ static void ev_handler(struct mg_connection *nc, int ev, void *ev_data, void *us
 		// printf("Time is %s.\n", utctime);
 		//  Update time every 1 second; temp and humidity every 10 seconds.
 		mg_printf_websocket_frame(nc, WEBSOCKET_OP_TEXT, timeString, utctime);
-		if (count == 10) {
+		if (count == 300) {
 		mg_printf_websocket_frame(nc, WEBSOCKET_OP_TEXT, tempString, ctof(tempC));
 		mg_printf_websocket_frame(nc, WEBSOCKET_OP_TEXT, humidString, humidity);
 		count = 0;
