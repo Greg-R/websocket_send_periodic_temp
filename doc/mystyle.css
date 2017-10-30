@@ -1,0 +1,25 @@
+<style type="text/css">
+body {
+	margin: 20px;
+}
+
+.domain {
+	display: none;
+}
+
+.tick line {
+	stroke: #C0C0BB;
+}
+
+.tick text {
+	fill: #8E8883;
+	font-size: 14pt;
+	font-family: sans-serif;
+}
+
+.axis-label {
+	fill: #635F5D;
+	font-family: sans-serif;
+	font-size: 20pt;
+}
+</style>

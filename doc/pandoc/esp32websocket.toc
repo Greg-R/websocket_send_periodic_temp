@@ -1,0 +1,8 @@
+\contentsline {chapter}{\numberline {1}Introduction}{5}{chapter.1}
+\contentsline {chapter}{\numberline {2}Mongoose-OS Code on the ESP32}{7}{chapter.2}
+\contentsline {section}{Creating an ``Empty App''}{7}{section*.2}
+\contentsline {section}{``Main'' Function}{8}{section*.3}
+\contentsline {section}{Configuration}{9}{section*.4}
+\contentsline {section}{The Event Handler Function}{9}{section*.5}
+\contentsline {section}{ESP32 Code Summary}{12}{section*.6}
+\contentsline {chapter}{\numberline {3}The Web Browser Code: HTML, CSS, and Javascript}{13}{chapter.3}
