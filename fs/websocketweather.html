@@ -1,61 +1,73 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<script src="https://d3js.org/d3.v4.min.js" type="text/javascript"></script>
-<title>Temperature Visualization</title>
-<style type="text/css">
-body {
-	margin: 20px;
-}
-
-.domain {
-	display: none;
-}
-
-.tick line {
-	stroke: #C0C0BB;
-}
-
-.tick text {
-	fill: #8E8883;
-	font-size: 14pt;
-	font-family: sans-serif;
-}
-
-.axis-label {
-	fill: #635F5D;
-	font-family: sans-serif;
-	font-size: 20pt;
-}
-</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://d3js.org/d3.v4.min.js" type="text/javascript"></script>
+    <title>Temperature Visualization</title>
+    <style type="text/css">
+        body {
+            margin: 20px;
+        }
+        
+        .domain {
+            display: none;
+        }
+        
+        .tick line {
+            stroke: #C0C0BB;
+        }
+        
+        .tick text {
+            fill: #8E8883;
+            font-size: 14pt;
+            font-family: sans-serif;
+        }
+        
+        .axis-label {
+            fill: #635F5D;
+            font-family: sans-serif;
+            font-size: 20pt;
+        }
+    </style>
 </head>
 
 <body>
-	<div>
-		<H2>Temperature Monitor</H2>
-		<p id="connectstatus">WebSocket is NOT connected!</p>
-	</div>
-	<div>
-		<p>Current Server Time in UTC</p>
-		<h2>
-			<div id="currentTime">Time Not Yet Updated</div>
-		</h2>
-	</div>
-	
-	<div>
-	<table>
-    <tr><td>Current Temperature F</td><td>Current Humidity %</td></tr>
-    <tr><td><h2><div id="currentTemperature">Temperature Not Yet Updated</div></h2></td>
-        
-     <td><h2>   <div id="currentHumidity">Humidity Not Yet Updated</div></td></h2></tr>
-         </table>    
+    <div>
+        <H2>Temperature Monitor</H2>
+        <p id="connectstatus">WebSocket is NOT connected!</p>
     </div>
-	
-	<svg width="960" height="500"></svg>
-	<script type="text/javascript">       
+    <div>
+        <p>Current Server Time in UTC</p>
+        <h2>
+            <div id="currentTime">Time Not Yet Updated</div>
+        </h2>
+    </div>
+
+    <div>
+        <table>
+            <tr>
+                <td>Current Temperature F</td>
+                <td>Current Humidity %</td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>
+                        <div id="currentTemperature">Temperature Not Yet Updated</div>
+                    </h2>
+                </td>
+
+                <td>
+                    <h2>
+                        <div id="currentHumidity">Humidity Not Yet Updated</div>
+                </td>
+                </h2>
+            </tr>
+        </table>
+    </div>
+
+    <svg width="960" height="500"></svg>
+    <script type="text/javascript">
         //  Open a WebSocket to the server.
         //  Need a Regular Expression to get the URL to open the WebSocket to.
         const serverUrlRegex = /\d+\.\d+\.\d+\.\d+/; //  Matches 192.168.1.8 etc.
@@ -63,8 +75,8 @@ body {
         console.log(`The currentURL is ${currentUrl}.`);
         const serverUrl = currentUrl.match(serverUrlRegex); //  Extract what is needed to create WebSocket.
         console.log(`The server URL is ${serverUrl[0]}`); //  The match is in the 0th element of the array.
-        let ws = new WebSocket(`ws://${serverUrl}`);   //  Comment this for static URI.
-        
+        let ws = new WebSocket(`ws://${serverUrl}`); //  Comment this for static URI.
+
         ws.onopen = () => {
             console.log('Web browser opened a WebSocket.');
             //  Update the connection status in the browser.
@@ -82,8 +94,8 @@ body {
 
         const xLabel = 'Time';
         const yLabel = 'Temperature';
-        
-    //  SVG size and positioning code.        
+
+        //  SVG size and positioning code.        
         const margin = {
             left: 120,
             right: 30,
@@ -120,97 +132,90 @@ body {
         const xValue = d => d.time;
         const yValue = d => d.temp;
         
+        //  The scales are further updated in the buildChart function.
         let xScale = d3.scaleTime();
         let yScale = d3.scaleLinear();
         
+        // line is the plotted temperature data.
         let line = d3.line(tempData)
-        .x(d => xScale(+d.time))
-        .y(d => yScale(+d.temp))
-        .curve(d3.curveCardinal);
-        
-        
-        
-        let currentTime = '';  //  This is updated by incoming data from the ESP32.
-        let chartBuilt = false;  //  This variable tracks the initial building of the chart.
-        
-       //  This function builds the chart. 
-        function buildChart() {
-//        let currentDate = new Date();
-//        let currentPlus12 = d3.timeHour.offset(currentDate, 12);
-//        let currentTime = '';  //  This is updated by incoming data from the ESP32.
-let currentPlus12 = d3.timeHour.offset(currentTime, 12);
-        
-xScale = xScale
-		.range([0, innerWidth])
-		.domain([currentTime, currentPlus12]).nice();
-//    .domain([currentDate, currentPlus12]).nice();
+            .x(d => xScale(+d.time))
+            .y(d => yScale(+d.temp))
+            .curve(d3.curveCardinal);
 
-        yScale = yScale
-        .domain([50,100])
-            .range([innerHeight, 0]) //  Flippage of y-axis occurs here.
+        let currentTime = ''; //  This is updated by incoming data from the ESP32.
+        let chartBuilt = false; //  This variable tracks the initial building of the chart.
+
+        //  This function builds the chart, but only after receiving data from ESP32.
+        function buildChart() {
+ 
+            let currentPlus12 = d3.timeHour.offset(currentTime, 12);
+            //  Complete the construction of the xScale.
+            //  This will use currentTime, which is the first time data
+            //  received from the ESP32.
+            xScale = xScale
+                .range([0, innerWidth])
+                .domain([currentTime, currentPlus12]).nice();
+
+            yScale = yScale
+                .domain([50, 100])
+                .range([innerHeight, 0]) //  Flippage of y-axis occurs here.
                 .nice();
 
-let xAxis = d3
-	.axisBottom(xScale)
-	.tickPadding(15)
-        .tickSize(-innerHeight)
-  .tickFormat(d3.timeFormat("%I:%M"))
+            let xAxis = d3
+                .axisBottom(xScale)
+                .tickPadding(15)
+                .tickSize(-innerHeight)
+                .tickFormat(d3.timeFormat("%I:%M"))
 
-        const yTicks = 10; // Will need more ticks for Fahrenheit.
-        const yAxis = d3.axisLeft()
-            .scale(yScale)
-            .ticks(yTicks)
-            .tickPadding(15)
-            .tickSize(-innerWidth);
-        
-        xAxisG.call(xAxis);
-        yAxisG.call(yAxis);
-        chartBuilt = true;
-       }
-       
+            const yTicks = 10; // Will need more ticks for Fahrenheit.
+            const yAxis = d3.axisLeft()
+                .scale(yScale)
+                .ticks(yTicks)
+                .tickPadding(15)
+                .tickSize(-innerWidth);
+
+            xAxisG.call(xAxis);
+            yAxisG.call(yAxis);
+            chartBuilt = true;
+        }
+
         //  Line chart update function.
         function update(objectArray) {
-            d3.selectAll("#tempData").remove();  //  Remove old line.           
+            d3.selectAll("#tempData").remove(); //  Remove old line.           
             g.append('path')
-            .attr('id', 'tempData')
+                .attr('id', 'tempData')
                 .datum(objectArray) //  This does not "bind" any data.
                 .attr('fill', 'none')
                 .attr('stroke', 'steelblue')
                 .attr('stroke-width', 4)
-                .attr('d', line)
-            .exit()
-            .remove();
-     //       xAxisG.call(xAxis);
-     //       yAxisG.call(yAxis);
+                .attr('d', line)  //  This will use the most recent data.
         };
 
-//  Initial build of the line chart.
-        update(tempData);
+        //  Clock is used both by the time display and on the X-axis of the chart.               
+        let clock = document.getElementById('currentTime');
+        let temperature = document.getElementById('currentTemperature');
+        let humidity = document.getElementById('currentHumidity');
 
-//  Clock is used both by the time display and on the X-axis of the chart.               
-let clock = document.getElementById('currentTime');
-let temperature = document.getElementById('currentTemperature');
-let humidity    = document.getElementById('currentHumidity');
-
-
-
-//  This is the event handler for incoming data from the ESP32.               
-       ws.onmessage = (message) => {
+        //  This is the event handler for incoming data from the ESP32.               
+        ws.onmessage = (message) => {
             console.log(message.data);
-            
+            //  Parse the incoming JSON data from the ESP32.
             let statusMessage = JSON.parse(message.data);
             //  Check the message type and handle as required.
             if (statusMessage.messageType === "temperature") {
                 console.log(`wxData message received`)
-let newTempData = {'time': currentTime, 'temp': +statusMessage.currentTemp};
+                let newTempData = {
+                    'time': currentTime,
+                    'temp': +statusMessage.currentTemp
+                };
+                //  Add a new data object to the end of the array.
                 tempData.push(newTempData);
                 //  Update chart.
                 update(tempData);
                 //  Update textual display.
                 temperature.textContent = statusMessage.currentTemp;
+            } else if (statusMessage.messageType === "humidity") {
                 humidity.textContent = statusMessage.currentHumidity;
-            } else if (statusMessage.messageType === "humidity") {   
-            	humidity.textContent = statusMessage.currentHumidity;                
             } else if (statusMessage.messageType === "serverTime") {
                 //  Current Server Time Updater.  Updated every 1 second by server.
                 currentTime = new Date(statusMessage.serverTime);
@@ -219,10 +224,10 @@ let newTempData = {'time': currentTime, 'temp': +statusMessage.currentTemp};
                 let hourMinute = hourMinuteFormat(currentTime);
                 console.log(`hour and minute ${hourMinute}`);
                 clock.textContent = currentTime;
+                //  The chart is built only after receiving the first time data.
                 if (chartBuilt === false) buildChart();
             }
         }
-
     </script>
 </body>
 
