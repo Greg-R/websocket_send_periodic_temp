@@ -1,15 +1,13 @@
 ---
 title:
-- Mongoose-OS ESP32 Temperature Sense with Websocket and D3.js Display
+ - Mongoose-OS ESP32 Temperature Sense with Websocket and D3.js Display
 author:
-- Gregory Raven 
+ - Gregory Raven 
 date:
-- October 28, 2017
-documentclass:
-- book
+ - October 28, 2017
 toc:
-- true
+ - true
 papersize:
-- letter
+ - letter
 ...
 

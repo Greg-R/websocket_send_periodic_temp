@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  30 OCT 2017 20:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  31 OCT 2017 07:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8,8 +8,8 @@ LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 3 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo
-File: bk10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@chapter=\count80
@@ -23,6 +23,47 @@ File: bk10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count88
+\Gm@cntv=\count89
+\c@Gm@tempcnt=\count90
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/charter.sty
+Package: charter 2005/04/12 PSNFSS-v9.2a (P.Dyballa) 
 )
 (/usr/share/texmf/tex/latex/lm/lmodern.sty
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
@@ -64,7 +105,7 @@ Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks14
+\@emptytoks=\toks16
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
@@ -80,56 +121,53 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks15
-\ex@=\dimen103
+\@emptytoks=\toks17
+\ex@=\dimen111
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen104
+\pmbraise@=\dimen112
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count88
+\inf@bad=\count91
 LaTeX Info: Redefining \frac on input line 199.
-\uproot@=\count89
-\leftroot@=\count90
+\uproot@=\count92
+\leftroot@=\count93
 LaTeX Info: Redefining \overline on input line 297.
-\classnum@=\count91
-\DOTSCASE@=\count92
+\classnum@=\count94
+\DOTSCASE@=\count95
 LaTeX Info: Redefining \ldots on input line 394.
 LaTeX Info: Redefining \dots on input line 397.
 LaTeX Info: Redefining \cdots on input line 518.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
-\big@size=\dimen105
+\big@size=\dimen113
 LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
-\macc@depth=\count93
-\c@MaxMatrixCols=\count94
+\macc@depth=\count96
+\c@MaxMatrixCols=\count97
 \dotsspace@=\muskip10
-\c@parentequation=\count95
-\dspbrk@lvl=\count96
-\tag@help=\toks16
-\row@=\count97
-\column@=\count98
-\maxfields@=\count99
-\andhelp@=\toks17
-\eqnshift@=\dimen106
-\alignsep@=\dimen107
-\tagshift@=\dimen108
-\tagwidth@=\dimen109
-\totwidth@=\dimen110
-\lineht@=\dimen111
-\@envbody=\toks18
+\c@parentequation=\count98
+\dspbrk@lvl=\count99
+\tag@help=\toks18
+\row@=\count100
+\column@=\count101
+\maxfields@=\count102
+\andhelp@=\toks19
+\eqnshift@=\dimen114
+\alignsep@=\dimen115
+\tagshift@=\dimen116
+\tagwidth@=\dimen117
+\totwidth@=\dimen118
+\lineht@=\dimen119
+\@envbody=\toks20
 \multlinegap=\skip44
 \multlinetaggap=\skip45
-\mathdisplay@stack=\toks19
+\mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2735.
 LaTeX Info: Redefining \] on input line 2736.
-)
-(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
@@ -152,8 +190,8 @@ LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks20
-\inpenc@posthook=\toks21
+\inpenc@prehook=\toks22
+\inpenc@posthook=\toks23
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2015/12/03 v1.1r UTF-8 support for inputenc
@@ -622,17 +660,12 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks22
-)
-\MT@toks=\toks23
-\MT@count=\count100
+\MT@toks=\toks24
+\MT@count=\count103
 LaTeX Info: Redefining \textls on input line 766.
-\MT@outer@kern=\dimen112
+\MT@outer@kern=\dimen120
 LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
-\MT@listname@count=\count101
+\MT@listname@count=\count104
 
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
@@ -659,11 +692,9 @@ Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 Package hobsub Info: Skipping package `ifluatex' (already loaded).
-Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
-Package ifvtex Info: VTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
 Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
@@ -699,16 +730,16 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen113
-\Hy@linkcounter=\count102
-\Hy@pagecounter=\count103
+\@linkdim=\dimen121
+\Hy@linkcounter=\count105
+\Hy@pagecounter=\count106
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count104
+\Hy@SavedSpaceFactor=\count107
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -727,17 +758,17 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count105
+\c@Hy@tempcnt=\count108
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen114
-\Fld@menulength=\count106
-\Field@Width=\dimen115
-\Fld@charsize=\dimen116
+\XeTeXLinkMargin=\dimen122
+\Fld@menulength=\count109
+\Field@Width=\dimen123
+\Fld@charsize=\dimen124
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -747,17 +778,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count107
-\c@Item=\count108
-\c@Hfootnote=\count109
+\Hy@abspage=\count110
+\c@Item=\count111
+\c@Hfootnote=\count112
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count110
-\c@bookmark@seq@number=\count111
+\Fld@listcount=\count113
+\c@bookmark@seq@number=\count114
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
@@ -766,7 +797,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip47
 )
-Package hyperref Info: Option `breaklinks' set `true' on input line 29.
+Package hyperref Info: Option `breaklinks' set `true' on input line 32.
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
@@ -784,10 +815,10 @@ Package graphics Info: Driver file: pdftex.def on input line 95.
 
 (/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-\Gread@gobject=\count112
+\Gread@gobject=\count115
 ))
-\Gin@req@height=\dimen117
-\Gin@req@width=\dimen118
+\Gin@req@height=\dimen125
+\Gin@req@width=\dimen126
 )
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grffile.sty
 Package: grffile 2012/04/05 v1.16 Extended file name support for graphics (HO)
@@ -802,33 +833,67 @@ Package: parskip 2001/04/09 non-zero parskip adjustments
 (./esp32websocket.aux)
 \openout1 = `esp32websocket.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 70.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 73.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 70.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 73.
 (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Info: Redefining \microtypecontext on input line 70.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(56.90533pt, 500.48433pt, 56.90533pt)
+* v-part:(T,H,B)=(64.13278pt, 666.70442pt, 64.13278pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=500.48433pt
+* \textheight=666.70442pt
+* \oddsidemargin=-15.36465pt
+* \evensidemargin=-15.36465pt
+* \topmargin=-40.011pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=47.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Info: Redefining \microtypecontext on input line 73.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
@@ -838,13 +903,12 @@ Package microtype Info: Using default expansion set `basictext'.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
-
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
 \AtBeginShipoutBox=\box28
-Package hyperref Info: Link coloring OFF on input line 70.
+Package hyperref Info: Link coloring OFF on input line 73.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -852,11 +916,11 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count113
+\c@section@level=\count116
 )
-LaTeX Info: Redefining \ref on input line 70.
-LaTeX Info: Redefining \pageref on input line 70.
-LaTeX Info: Redefining \nameref on input line 70.
+LaTeX Info: Redefining \ref on input line 73.
+LaTeX Info: Redefining \pageref on input line 73.
+LaTeX Info: Redefining \nameref on input line 73.
 
 (./esp32websocket.out) (./esp32websocket.out)
 \@outlinefile=\write3
@@ -865,17 +929,17 @@ LaTeX Info: Redefining \nameref on input line 70.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count114
-\scratchdimen=\dimen119
+\scratchcounter=\count117
+\scratchdimen=\dimen127
 \scratchbox=\box29
-\nofMPsegments=\count115
-\nofMParguments=\count116
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count117
-\MPscratchDim=\dimen120
-\MPnumerator=\count118
-\makeMPintoPDFobject=\count119
-\everyMPtoPDFconversion=\toks25
+\nofMPsegments=\count118
+\nofMParguments=\count119
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count120
+\MPscratchDim=\dimen128
+\MPnumerator=\count121
+\makeMPintoPDFobject=\count122
+\everyMPtoPDFconversion=\toks26
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -891,35 +955,35 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 72.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 75.
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 72.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 75.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 72.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 75.
 
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 72.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 75.
 
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 72.
+(Font)              <14.4> on input line 75.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 72.
+(Font)              <10> on input line 75.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 72.
-LaTeX Font Info:    Try loading font information for U+msa on input line 72.
+(Font)              <7> on input line 75.
+LaTeX Font Info:    Try loading font information for U+msa on input line 75.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -927,7 +991,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 72.
+LaTeX Font Info:    Try loading font information for U+msb on input line 75.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -937,237 +1001,136 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
-
-] (./esp32websocket.toc
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./esp32websocket.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 3.
+(Font)              <12> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 3.
+(Font)              <8> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 3.
+(Font)              <6> on input line 3.
 )
 \tf@toc=\write4
 \openout4 = `esp32websocket.toc'.
 
- [3] [4
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.80 \chapter
+             {Introduction}\label{introduction} [1
 
 ]
 Chapter 1.
-<tempviz1.png, id=93, 680.5425pt x 461.47406pt>
+<tempviz1.png, id=91, 680.5425pt x 461.47406pt>
 File: tempviz1.png Graphic file (type png)
  <use tempviz1.png>
-Package pdftex.def Info: tempviz1.png used on input line 93.
-(pdftex.def)             Requested size: 344.99524pt x 233.94034pt.
- [5] [6 <./tempviz1.png>]
+Package pdftex.def Info: tempviz1.png used on input line 96.
+(pdftex.def)             Requested size: 500.48868pt x 339.38004pt.
+ [2
+
+] [3 <./tempviz1.png>]
 Chapter 2.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 137.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 140.
 
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [7
+) [4
 
-] [8]
-Overfull \hbox (1.499pt too wide) in paragraph at lines 235--235
-[]  \T1/lmtt/m/n/10 - origin: https://github.com/mongoose-os-libs/rpc-service-c
-onfig[] 
- []
-
-[9]
-Overfull \hbox (127.49863pt too wide) in paragraph at lines 327--327
-[]\T1/lmtt/m/n/10 static void ev_handler(struct mg_connection *nc, int ev, void
+] [5]
+Overfull \hbox (55.26595pt too wide) in paragraph at lines 330--330
+[]\T1/lmtt/m/n/12 static void ev_handler(struct mg_connection *nc, int ev, void
  *ev_data, void *user_data) {[] 
  []
 
-
-Overfull \hbox (95.99872pt too wide) in paragraph at lines 327--327
-[]        \T1/lmtt/m/n/10 mg_set_timer(nc, mg_time() + INTERVAL_SECONDS);  // #
+[6]
+Overfull \hbox (18.21593pt too wide) in paragraph at lines 330--330
+[]        \T1/lmtt/m/n/12 mg_set_timer(nc, mg_time() + INTERVAL_SECONDS);  // #
 2 Timer initialization.[] 
  []
 
 
-Overfull \hbox (6.74898pt too wide) in paragraph at lines 327--327
-[]    \T1/lmtt/m/n/10 case MG_EV_TIMER: {          //  #3 Most of the action is
- here![] 
- []
-
-
-Overfull \hbox (27.74892pt too wide) in paragraph at lines 327--327
-[]        \T1/lmtt/m/n/10 strftime(utctime, sizeof(utctime), "%A %B %d %T", loc
-alstruct);[] 
- []
-
-
-Overfull \hbox (53.99884pt too wide) in paragraph at lines 327--327
-[]        \T1/lmtt/m/n/10 //  printf("The temperature in degrees C is %2.1f.\n"
-, ctof(tempC));[] 
- []
-
-
-Overfull \hbox (11.99896pt too wide) in paragraph at lines 327--327
-[]        \T1/lmtt/m/n/10 //  printf("The humidity in percent is %2.1f.\n", hum
-idity);[] 
- []
-
-
-Overfull \hbox (74.99878pt too wide) in paragraph at lines 327--327
-[]        \T1/lmtt/m/n/10 //  #4 Update time every 1 second; temp and humidity 
-every five minutes.[] 
- []
-
-
-Overfull \hbox (64.49881pt too wide) in paragraph at lines 327--327
-[]        \T1/lmtt/m/n/10 mg_printf_websocket_frame(nc, WEBSOCKET_OP_TEXT, time
-String, utctime);[] 
- []
-
-
-Overfull \hbox (106.49869pt too wide) in paragraph at lines 327--327
-[]            \T1/lmtt/m/n/10 mg_printf_websocket_frame(nc, WEBSOCKET_OP_TEXT, 
+Overfull \hbox (30.56593pt too wide) in paragraph at lines 330--330
+[]            \T1/lmtt/m/n/12 mg_printf_websocket_frame(nc, WEBSOCKET_OP_TEXT, 
 tempString, ctof(tempC));[] 
  []
 
 
-Overfull \hbox (95.99872pt too wide) in paragraph at lines 327--327
-[]            \T1/lmtt/m/n/10 mg_printf_websocket_frame(nc, WEBSOCKET_OP_TEXT, 
+Overfull \hbox (18.21593pt too wide) in paragraph at lines 330--330
+[]            \T1/lmtt/m/n/12 mg_printf_websocket_frame(nc, WEBSOCKET_OP_TEXT, 
 humidString, humidity);[] 
  []
 
-[10] [11] [12]
+[7] [8]
 Chapter 3.
-
-Underfull \vbox (badness 2393) has occurred while \output is active []
-
- [13
+[9
 
 ]
-Overfull \hbox (80.24876pt too wide) in paragraph at lines 493--493
-[]        \T1/lmtt/m/n/10 const serverUrlRegex = /\d+\.\d+\.\d+\.\d+/; //  Matc
-hes 192.168.1.8 etc.[] 
- []
-
-
-Overfull \hbox (16.70616pt too wide) has occurred while \output is active
-\T1/lmr/m/n/10 14 \T1/lmr/m/sl/10 CHAPTER 3.  THE WEB BROWSER CODE: HTML, CSS, 
-AND JAVASCRIPT
- []
-
-[14]
-Overfull \hbox (95.99872pt too wide) in paragraph at lines 493--493
-[]        \T1/lmtt/m/n/10 const currentUrl = window.location.origin; //  Get th
+Overfull \hbox (18.21593pt too wide) in paragraph at lines 496--496
+[]        \T1/lmtt/m/n/12 const currentUrl = window.location.origin; //  Get th
 e URL from the browser.[] 
  []
 
-LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 493
+LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 496
 .
 (/usr/share/texmf/tex/latex/lm/ts1lmtt.fd
 File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Overfull \hbox (216.74837pt too wide) in paragraph at lines 493--493
-[]        \T1/lmtt/m/n/10 const serverUrl = currentUrl.match(serverUrlRegex); /
+Overfull \hbox (160.241pt too wide) in paragraph at lines 496--496
+[]        \T1/lmtt/m/n/12 const serverUrl = currentUrl.match(serverUrlRegex); /
 /  Extract what is needed to create WebSocket.[] 
  []
 
 
-Overfull \hbox (216.74837pt too wide) in paragraph at lines 493--493
-[]        \T1/lmtt/m/n/10 console.log(\TS1/lmtt/m/n/10 `\T1/lmtt/m/n/10 The ser
-ver URL is ${serverUrl[0]}\TS1/lmtt/m/n/10 `\T1/lmtt/m/n/10 ); //  The match is
+Overfull \hbox (160.241pt too wide) in paragraph at lines 496--496
+[]        \T1/lmtt/m/n/12 console.log(\TS1/lmtt/m/n/12 `\T1/lmtt/m/n/12 The ser
+ver URL is ${serverUrl[0]}\TS1/lmtt/m/n/12 `\T1/lmtt/m/n/12 ); //  The match is
  in the 0th element of the array.[] 
  []
 
-
-Overfull \hbox (11.99896pt too wide) in paragraph at lines 510--510
-[]            \T1/lmtt/m/n/10 connectstatus.textContent = "WebSocket is disconn
-ected";[] 
- []
-
-[15]
-Overfull \hbox (1.499pt too wide) in paragraph at lines 574--574
-[]                \T1/lmtt/m/n/10 //  Add a new data object to the end of the a
-rray.[] 
- []
-
-
-Overfull \hbox (11.99896pt too wide) in paragraph at lines 574--574
-[]                \T1/lmtt/m/n/10 temperature.textContent = statusMessage.curre
-ntTemp;[] 
- []
-
-
-Overfull \hbox (1.499pt too wide) in paragraph at lines 574--574
-[]            \T1/lmtt/m/n/10 } else if (statusMessage.messageType === "humidit
-y") {[] 
- []
-
-
-Overfull \hbox (17.24895pt too wide) in paragraph at lines 574--574
-[]                \T1/lmtt/m/n/10 humidity.textContent = statusMessage.currentH
-umidity;[] 
- []
-
-
-Overfull \hbox (11.99896pt too wide) in paragraph at lines 574--574
-[]            \T1/lmtt/m/n/10 } else if (statusMessage.messageType === "serverT
-ime") {[] 
- []
-
-
-Overfull \hbox (90.74873pt too wide) in paragraph at lines 574--574
-[]                \T1/lmtt/m/n/10 //  Current Server Time Updater.  Updated eve
+[10] [11]
+Overfull \hbox (12.04092pt too wide) in paragraph at lines 577--577
+[]                \T1/lmtt/m/n/12 //  Current Server Time Updater.  Updated eve
 ry 1 second by server.[] 
  []
 
 
-Overfull \hbox (85.49875pt too wide) in paragraph at lines 574--574
-[]                \T1/lmtt/m/n/10 console.log(\TS1/lmtt/m/n/10 `\T1/lmtt/m/n/10
- The current time from the server is ${currentTime}\TS1/lmtt/m/n/10 `\T1/lmtt/m
-/n/10 );[] 
+Overfull \hbox (5.86592pt too wide) in paragraph at lines 577--577
+[]                \T1/lmtt/m/n/12 console.log(\TS1/lmtt/m/n/12 `\T1/lmtt/m/n/12
+ The current time from the server is ${currentTime}\TS1/lmtt/m/n/12 `\T1/lmtt/m
+/n/12 );[] 
  []
 
+[12]
+Chapter 4.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 618.
+[13
 
-Overfull \hbox (74.99878pt too wide) in paragraph at lines 574--574
-[]                \T1/lmtt/m/n/10 //  The chart is built only after receiving t
-he first time data.[] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (16.70616pt too wide) has occurred while \output is active
-\T1/lmr/m/n/10 16 \T1/lmr/m/sl/10 CHAPTER 3.  THE WEB BROWSER CODE: HTML, CSS, 
-AND JAVASCRIPT
- []
-
-[16]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 599.
- [17]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 599.
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 618.
  (./esp32websocket.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 599.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 599.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 618.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 618.
 Package rerunfilecheck Info: File `esp32websocket.out' has not changed.
-(rerunfilecheck)             Checksum: FB24E4E08FCB907F2083A07BA7FEF167;2395.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 599.
+(rerunfilecheck)             Checksum: 4AD98414CFE740639B0599F956F4D111;2864.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 618.
  ) 
 Here is how much of TeX's memory you used:
- 11945 strings out of 494953
- 171444 string characters out of 6180977
- 262360 words of memory out of 5000000
- 14943 multiletter control sequences out of 15000+600000
- 65858 words of font info for 100 fonts, out of 8000000 for 9000
+ 12390 strings out of 494953
+ 178486 string characters out of 6180977
+ 275059 words of memory out of 5000000
+ 15383 multiletter control sequences out of 15000+600000
+ 60293 words of font info for 97 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 32i,6n,35p,401b,454s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,6n,35p,401b,454s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/d
-vips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/shar
-e/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/l
-m/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf
-/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmro10
-.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on esp32websocket.pdf (17 pages, 257110 bytes).
+vips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm/lmb10.pfb></usr/share
+/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/
+lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmro12.pfb></usr/share/texmf/
+fonts/type1/public/lm/lmtt12.pfb>
+Output written on esp32websocket.pdf (14 pages, 201740 bytes).
 PDF statistics:
- 212 PDF objects out of 1000 (max. 8388607)
- 182 compressed objects within 2 object streams
- 43 named destinations out of 1000 (max. 500000)
- 12398 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 200 PDF objects out of 1000 (max. 8388607)
+ 175 compressed objects within 2 object streams
+ 41 named destinations out of 1000 (max. 500000)
+ 12414 words of extra memory for PDF output out of 14400 (max. 10000000)
 
