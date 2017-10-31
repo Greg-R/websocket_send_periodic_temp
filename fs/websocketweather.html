@@ -82,14 +82,14 @@
             //  Update the connection status in the browser.
             connectstatus.textContent = "WebSocket Connected";
         }
-
         ws.onclose = () => {
             console.log('Web browser WebSocket just closed.');
             //  Update the connection status in the browser.
             connectstatus.textContent = "WebSocket is disconnected";
         }
-
-        //  Array for holding JSON data objects.  This array is filled by the update function.
+        //  D3.js line chart code follows.
+        //  Array for holding JSON data objects from the ESP32.
+        //  This array is filled by the update function.
         let tempData = [];
 
         const xLabel = 'Time';
