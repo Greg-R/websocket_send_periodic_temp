@@ -5,8 +5,8 @@
   "wifi": {
     "sta": {
       "enable": true,
-      "ssid": "led_zeppelin",
-      "pass": "test_radios",
+      "ssid": "your_router_ssid",
+      "pass": "your_router_password",
       "ip": "",
       "netmask": "",
       "dhcp_hostname": ""
