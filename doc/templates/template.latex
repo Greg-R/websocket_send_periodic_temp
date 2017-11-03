@@ -1,7 +1,7 @@
 \documentclass[oneside,letterpaper,12pt]{book}
 \usepackage[T1]{fontenc}
 \usepackage[top=0.8874in,bottom=0.8874in,left=0.7874in,right=0.7874in]{geometry}
-\usepackage{charter}
+
 $if(beamerarticle)$
 \usepackage{beamerarticle} % needs to be loaded first
 $endif$
@@ -9,6 +9,7 @@ $if(fontfamily)$
 \usepackage[$for(fontfamilyoptions)$$fontfamilyoptions$$sep$,$endfor$]{$fontfamily$}
 $else$
 \usepackage{lmodern}
+\usepackage{charter}
 $endif$
 $if(linestretch)$
 \usepackage{setspace}
