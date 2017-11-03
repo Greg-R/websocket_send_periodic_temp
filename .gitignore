@@ -5,6 +5,10 @@ build
 
 *.aux
 *.tex
+*.synctex.gz
+*.toc
+*.out
+*.log
 
 # Prerequisites
 *.d
