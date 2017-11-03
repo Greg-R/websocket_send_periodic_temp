@@ -27,10 +27,12 @@
 \PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
 \usepackage[unicode=true]{hyperref}
 \hypersetup{
-            pdfauthor={Gregory Raven},
             pdfborder={0 0 0},
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
+\usepackage{longtable,booktabs}
+% Fix footnotes in tables (requires footnote package)
+\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{long table}}{}
 \usepackage{graphicx,grffile}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
@@ -66,12 +68,10 @@
 \makeatother
 
 
-\title{Mongoose-OS ESP32 Temperature Sense with Websocket and D3.js Display}
-\author{Gregory Raven}
-\date{October 28, 2017}
+\date{}
 
 \begin{document}
-\maketitle
+\include{cover}
 
 {
 \setcounter{tocdepth}{2}
@@ -83,6 +83,20 @@ This is the documentation for a project based on the Mongoose-OS
 operating system. The development board contains an ESP32
 system-on-chip. A DHT22 temperature-humidity sensor chip is wired to the
 ESP32 board.
+
+Assembly of the project can be done on an inexpensive breadboard. Most
+of the ESP32 development boards should work, however, some of them have
+wide pin-spacings which do not work well with the common breadboard. The
+latest board from Adafruit, the ``Feather'' board is the narrowest seen
+yet, allowing two rows of pins on one side and one side on the other.
+This board also has capability for battery power which is a nice
+feature.
+
+\begin{figure}
+\centering
+\includegraphics{./adafruit-feather-medium.jpg}
+\caption{Adafruit HUZZAH32 -- ESP32 Feather Board}
+\end{figure}
 
 The system is an HTTP5 web server. The server provides a web page which
 then connects to the server via Websocket. The browser must be Websocket
@@ -101,15 +115,21 @@ A note of caution on this project. None of the available security
 features are enabled. This project should only be deployed in a local
 network behind a firewall. It should not be ``internet facing''.
 
-Assembly of the project can be done on an inexpensive breadboard. Most
-of the ESP32 development boards should work, however, some of them have
-wide pin-spacings which do not work well with the common breadboard. The
-latest board from Adafruit, the ``Feather'' board is the narrowest seen
-yet, allowing two rows of pins on one side and one side on the other.
-This board also had capability for battery power which is a nice
-feature.
+\section{Wiring}\label{wiring}
 
-(insert Adafruit board/project image here)
+Only three wires from the ESP32 Feather to the DHT22 are required per
+this table:
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+Huzzah Feather Pin & DHT22 Pin\tabularnewline
+\midrule
+\endhead
+3V & 1, VDD power supply\tabularnewline
+21 (GPIO) & 2, DATA\tabularnewline
+GND & 4, GROUND\tabularnewline
+\bottomrule
+\end{longtable}
 
 \chapter{Mongoose-OS Code on the
 ESP32}\label{mongoose-os-code-on-the-esp32}
@@ -150,7 +170,24 @@ mos init --arch=esp32
 \end{verbatim}
 
 The above command will create the file structure necessary to build the
-app with the mos tool.
+app with the mos tool:
+
+\begin{verbatim}
+mos --clean build
+\end{verbatim}
+
+To flash the firmware to the device (assuming a solid USB connection to
+the device):
+
+\begin{verbatim}
+mos flash
+\end{verbatim}
+
+\section{Github Repository}\label{github-repository}
+
+The repository for this project:
+
+\url{https://github.com/Greg-R/websocket_send_periodic_temp}
 
 \section{\texorpdfstring{``Main''
 Function}{Main Function}}\label{main-function}
@@ -217,44 +254,37 @@ steps which are required to activate these features:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\tightlist
 \item
   Add the libraries to the mos.yml file. A default mos.yml file is
   created by the mos init command. Add the http-server and dht lines to
   the mos.yml file. The ``libs'' section of the file should look like
   this:
-\end{enumerate}
 
 \begin{verbatim}
-# List of libraries used by this app, in order of initialisation
-libs:
-  - origin: https://github.com/mongoose-os-libs/ca-bundle
-  - origin: https://github.com/mongoose-os-libs/rpc-service-config
-  - origin: https://github.com/mongoose-os-libs/rpc-service-fs
-  - origin: https://github.com/mongoose-os-libs/rpc-uart
-  - origin: https://github.com/mongoose-os-libs/wifi
-  - origin: https://github.com/mongoose-os-libs/http-server
-  - origin: https://github.com/mongoose-os-libs/dht
+ # List of libraries used by this app, in order of initialisation
+ libs:
+   - origin: https://github.com/mongoose-os-libs/ca-bundle
+   - origin: https://github.com/mongoose-os-libs/rpc-service-config
+   - origin: https://github.com/mongoose-os-libs/rpc-service-fs
+   - origin: https://github.com/mongoose-os-libs/rpc-uart
+   - origin: https://github.com/mongoose-os-libs/wifi
+   - origin: https://github.com/mongoose-os-libs/http-server
+   - origin: https://github.com/mongoose-os-libs/dht
 \end{verbatim}
 
-The libraries are described here:
+  The libraries are described here:
 
-\url{https://mongoose-os.com/docs/reference/api.html}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{1}
-\tightlist
+  \url{https://mongoose-os.com/docs/reference/api.html}
 \item
   Add the \#include lines to the main.c file. The top of the file should
   look like this:
-\end{enumerate}
 
 \begin{verbatim}
-#include "mgos.h"
-#include "mgos_http_server.h"
-#include "mgos_dht.h"
+ #include "mgos.h"
+ #include "mgos_http_server.h"
+ #include "mgos_dht.h"
 \end{verbatim}
+\end{enumerate}
 
 \section{The Event Handler Function}\label{the-event-handler-function}
 
@@ -490,8 +520,8 @@ Websocket API to open the connection.
         const serverUrlRegex = /\d+\.\d+\.\d+\.\d+/; //  Matches 192.168.1.8 etc.
         const currentUrl = window.location.origin; //  Get the URL from the browser.
         console.log(`The currentURL is ${currentUrl}.`);
-        const serverUrl = currentUrl.match(serverUrlRegex); //  Extract what is needed to create WebSocket.
-        console.log(`The server URL is ${serverUrl[0]}`); //  The match is in the 0th element of the array.
+        const serverUrl = currentUrl.match(serverUrlRegex);
+        console.log(`The server URL is ${serverUrl[0]}`);
         let ws = new WebSocket(`ws://${serverUrl}`);
 \end{verbatim}
 
@@ -687,5 +717,19 @@ Pressing the reset button on the development board should start the boot
 process, and numerous messages will be written to the terminal. This
 will include IP addresses in the case of a station connecting to a
 router with DHCP and also connection status. Very useful!
+
+\chapter{Resources}\label{resources}
+
+The Mongoose-OS documentation:
+
+\url{https://mongoose-os.com/docs/quickstart/setup.html}
+
+The Adafruit ESP32 Feather Board:
+
+\url{https://www.adafruit.com/product/3405}
+
+The DHT22 temperature and humidity sensor:
+
+\url{https://www.adafruit.com/product/385}
 
 \end{document}

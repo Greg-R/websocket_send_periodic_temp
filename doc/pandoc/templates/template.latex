@@ -225,6 +225,7 @@ $endif$
 \date{$date$}
 
 \begin{document}
+\include{cover}
 $if(title)$
 \maketitle
 $endif$

@@ -31,7 +31,23 @@ cd websocket_send_periodic_temp
 mos init --arch=esp32
 ~~~
 
-The above command will create the file structure necessary to build the app with the mos tool.
+The above command will create the file structure necessary to build the app with the mos tool:
+
+~~~
+mos --clean build
+~~~
+
+To flash the firmware to the device (assuming a solid USB connection to the device):
+
+~~~
+mos flash
+~~~
+
+##  Github Repository
+
+The repository for this project:
+
+[https://github.com/Greg-R/websocket_send_periodic_temp](https://github.com/Greg-R/websocket_send_periodic_temp)
 
 ## "Main" Function
 
@@ -86,30 +102,28 @@ There are two steps which are required to activate these features:
 Add the http-server and dht lines to the mos.yml file.  The "libs" section of the file should look
 like this:
 
-~~~
-# List of libraries used by this app, in order of initialisation
-libs:
-  - origin: https://github.com/mongoose-os-libs/ca-bundle
-  - origin: https://github.com/mongoose-os-libs/rpc-service-config
-  - origin: https://github.com/mongoose-os-libs/rpc-service-fs
-  - origin: https://github.com/mongoose-os-libs/rpc-uart
-  - origin: https://github.com/mongoose-os-libs/wifi
-  - origin: https://github.com/mongoose-os-libs/http-server
-  - origin: https://github.com/mongoose-os-libs/dht
-~~~
+         # List of libraries used by this app, in order of initialisation
+         libs:
+           - origin: https://github.com/mongoose-os-libs/ca-bundle
+           - origin: https://github.com/mongoose-os-libs/rpc-service-config
+           - origin: https://github.com/mongoose-os-libs/rpc-service-fs
+           - origin: https://github.com/mongoose-os-libs/rpc-uart
+           - origin: https://github.com/mongoose-os-libs/wifi
+           - origin: https://github.com/mongoose-os-libs/http-server
+           - origin: https://github.com/mongoose-os-libs/dht
 
-The libraries are described here:
+    The libraries are described here:
 
-[https://mongoose-os.com/docs/reference/api.html](https://mongoose-os.com/docs/reference/api.html)
+    [https://mongoose-os.com/docs/reference/api.html](https://mongoose-os.com/docs/reference/api.html)
 
 2.  Add the #include lines to the main.c file.  The top of the file
 should look like this:
 
-~~~
-#include "mgos.h"
-#include "mgos_http_server.h"
-#include "mgos_dht.h"
-~~~
+    ~~~
+     #include "mgos.h"
+     #include "mgos_http_server.h"
+     #include "mgos_dht.h"
+    ~~~
 
 ## The Event Handler Function
 

@@ -78,8 +78,8 @@ Then it is simple to use the Websocket API to open the connection.
         const serverUrlRegex = /\d+\.\d+\.\d+\.\d+/; //  Matches 192.168.1.8 etc.
         const currentUrl = window.location.origin; //  Get the URL from the browser.
         console.log(`The currentURL is ${currentUrl}.`);
-        const serverUrl = currentUrl.match(serverUrlRegex); //  Extract what is needed to create WebSocket.
-        console.log(`The server URL is ${serverUrl[0]}`); //  The match is in the 0th element of the array.
+        const serverUrl = currentUrl.match(serverUrlRegex);
+        console.log(`The server URL is ${serverUrl[0]}`);
         let ws = new WebSocket(`ws://${serverUrl}`);
 ~~~
 
