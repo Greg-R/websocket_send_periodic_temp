@@ -107,8 +107,8 @@ enum mgos_app_init_result mgos_app_init(void) {
 	//  2. Bind the event handler to the HTTP server.
 	mgos_register_http_endpoint("/", ev_handler, user_data);
 
-	//  3. Create the DHT22 sensor.
-	if((dht22 = mgos_dht_create(2, DHT22)) == NULL) {
+	//  3. Create the DHT22 sensor.  21 is GPIO number.
+	if((dht22 = mgos_dht_create(21, DHT22)) == NULL) {
 		puts("DHT22 handle not created");
 	}
 
