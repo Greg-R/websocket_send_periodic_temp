@@ -3,8 +3,8 @@ build
 .cproject
 .settings
 
-.aux
-.tex
+*.aux
+*.tex
 
 # Prerequisites
 *.d
