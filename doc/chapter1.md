@@ -9,7 +9,7 @@ however, some of them have wide pin-spacings which do not work well with the com
 from Adafruit, the "Feather" board is the narrowest seen yet, allowing two rows of pins on one side and one side
 on the other.  This board also has capability for battery power which is a nice feature.
 
-![Adafruit HUZZAH32 – ESP32 Feather Board](./adafruit-feather-medium.jpg)
+![Adafruit HUZZAH32 ESP32 Feather Board](./adafruit-feather-medium.jpg)
 
 The system is an HTTP5 web server.  The server provides a web page which then connects to the server via Websocket.
 The browser must be Websocket capable.  After a Websocket connection is established, the server begins publishing
