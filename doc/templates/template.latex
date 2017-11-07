@@ -9,7 +9,7 @@ $if(fontfamily)$
 \usepackage[$for(fontfamilyoptions)$$fontfamilyoptions$$sep$,$endfor$]{$fontfamily$}
 $else$
 
-\usepackage{charter}
+
 \usepackage{color}
 
 $endif$
@@ -67,7 +67,7 @@ $endif$
 $if(verbatim-in-note)$
 \usepackage{fancyvrb}
 $endif$
-\usepackage[unicode=true]{hyperref}
+\usepackage[colorlinks=true, linkcolor=red, unicode=true]{hyperref}
 $if(colorlinks)$
 \PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
 $endif$
@@ -226,7 +226,7 @@ $if(institute)$
 \institute{$for(institute)$$institute$$sep$ \and $endfor$}
 $endif$
 \date{$date$}
-
+\usepackage{charter}
 \begin{document}
 \include{cover}
 $if(title)$
